@@ -1,0 +1,482 @@
+/* 전체 영역
+===================================================== */
+
+#wrapper{
+    width:1280px;
+}
+
+/* 헤더 영역
+===================================================== */
+
+header{
+    width:100%;
+    height:70px;
+}
+
+header h1{
+    width:145px;
+    height: 60px;
+    position:absolute;
+    top:10px;
+    left:27px;
+    padding-top:2px;
+    border-right: 1px solid #aaa;
+}
+
+header h1 img{
+    width:115px;
+    height:50px;
+    float:left;
+}
+
+#gnb{
+    width:100%;
+    height: 1100px;
+}
+
+#gnb li{
+    width:276px;
+    margin-top:10px;
+    float:left;
+    border-right:1px solid #aaa;
+    transition:all .5s;
+}
+
+#gnb li:hover{
+    background-color: #dedede;
+}
+
+#gnb li.vehicles{
+    margin-left:172px;
+}
+
+#gnb li a{
+    line-height: 61px;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:3px;
+    padding:25px 80px;
+}
+
+#gnb li.above_and_beyond a{
+    padding:25px 55px;
+}
+
+#gnb li.vehicles .windows{
+    width:1280px;
+    height: 600px;
+    background-color: #fff;
+    position:relative;
+    top:-1px;
+    right:172px;
+    
+}
+
+/* 호버 시 백그라운드 */
+
+#gnb li.vehicles:hover .windows{
+    z-index: 11;
+}
+
+#gnb li.vehicles .windows section{
+    width:320px;
+    float:left;
+}
+
+#gnb li.vehicles .windows img{
+    width:0%;
+    position:relative;
+    right:91px;
+    transition:all .2s;
+}
+
+#gnb li.vehicles .windows h4{
+    text-align:center;
+    padding-bottom:10px;
+    text-decoration: underline;
+    color:rgba(0,0,0,0);
+}
+
+#gnb li.vehicles .windows span{
+    color:rgba(0,0,0,0);
+    display:block;
+    text-align: center;
+    font-size:14px;
+    padding-bottom:10px;
+}
+
+/* 섹션 1 호버시 */
+
+#gnb li.vehicles:hover .windows .range_rover img{
+    width:100%;
+}
+
+#gnb li.vehicles:hover .windows .range_rover h4{
+    color:black;
+}
+
+#gnb li.vehicles:hover .windows .range_rover span{
+    color:black;
+}
+
+/* 섹션 1 이미지 호버시*/
+
+
+/* 섹션 2 호버시 */
+
+#gnb li.vehicles .windows .range_rover_sport img{
+    transition:all 0.2s 0.15s;
+}
+
+#gnb li.vehicles:hover .windows .range_rover_sport img{
+    width:100%;
+}
+
+#gnb li.vehicles .windows .range_rover_sport h4{
+    transition:all 0.2s 0.15s;
+}
+
+#gnb li.vehicles:hover .windows .range_rover_sport h4{
+    color:black;
+}
+
+#gnb li.vehicles .windows .range_rover_sport span{
+    transition:all 0.2s 0.15s;
+}
+
+#gnb li.vehicles:hover .windows .range_rover_sport span{
+    color:black;
+}
+
+/* 섹션 3 호버시 */
+
+#gnb li.vehicles .windows .range_rover_evoque img{
+    transition:all 0.2s 0.3s;
+}
+
+#gnb li.vehicles:hover .windows .range_rover_evoque img{
+    width:100%;
+}
+
+#gnb li.vehicles .windows .range_rover_evoque h4{
+    transition:all 0.2s 0.3s;
+}
+
+#gnb li.vehicles:hover .windows .range_rover_evoque h4{
+    color:black;
+}
+
+#gnb li.vehicles .windows .range_rover_evoque span{
+    transition:all 0.2s 0.3s;
+}
+
+#gnb li.vehicles:hover .windows .range_rover_evoque span{
+    color:black;
+}
+
+/* 섹션 4 호버시 */
+
+#gnb li.vehicles .windows .new_discovery_sport img{
+    transition:all 0.2s 0.45s;
+}
+
+#gnb li.vehicles:hover .windows .new_discovery_sport img{
+    width:100%;
+}
+
+#gnb li.vehicles .windows .new_discovery_sport h4{
+    transition:all 0.2s 0.45s;
+}
+
+#gnb li.vehicles:hover .windows .new_discovery_sport h4{
+    color:black;
+}
+
+#gnb li.vehicles .windows .new_discovery_sport span{
+    transition:all 0.2s 0.45s;
+}
+
+#gnb li.vehicles:hover .windows .new_discovery_sport span{
+    color:black;
+}
+
+/* 섹션 5 호버시 */
+
+#gnb li.vehicles .windows .discovery img{
+    transition:all 0.2s 0.6s;
+}
+
+#gnb li.vehicles:hover .windows .discovery img{
+    width:100%;
+}
+
+#gnb li.vehicles .windows .discovery h4{
+    transition:all 0.2s 0.6s;
+}
+
+#gnb li.vehicles:hover .windows .discovery h4{
+    color:black;
+}
+
+#gnb li.vehicles .windows .discovery span{
+    transition:all 0.2s 0.6s;
+}
+
+#gnb li.vehicles:hover .windows .discovery span{
+    color:black;
+}
+
+/* 섹션 6 호버시 */
+
+#gnb li.vehicles .windows .freelander2 img{
+    transition:all 0.2s .75s;
+}
+
+#gnb li.vehicles:hover .windows .freelander2 img{
+    width:100%;
+}
+
+#gnb li.vehicles .windows .freelander2 h4{
+    transition:all 0.2s .75s;
+}
+
+#gnb li.vehicles:hover .windows .freelander2 h4{
+    color:black;
+}
+
+#gnb li.vehicles .windows .freelander2 span{
+    transition:all 0.2s .75s;
+}
+
+#gnb li.vehicles:hover .windows .freelander2 span{
+    color:black;
+}
+
+/* 섹션 7 호버시 */
+
+#gnb li.vehicles .windows .special img{
+    transition:all 0.2s .9s;
+}
+
+#gnb li.vehicles:hover .windows .special img{
+    width:100%;
+}
+
+#gnb li.vehicles .windows .special h4{
+    transition:all 0.2s .9s;
+}
+
+#gnb li.vehicles:hover .windows .special h4{
+    color:black;
+}
+
+#gnb li.vehicles .windows .special span{
+    transition:all 0.2s .9s;
+}
+
+#gnb li.vehicles:hover .windows .special span{
+    color:black;
+}
+
+/* 섹션 8 호버시 */
+
+#gnb li.vehicles .windows .lineup img{
+    transition:all 0.2s 1.05s;
+}
+
+#gnb li.vehicles:hover .windows .lineup img{
+    width:100%;
+}
+
+#gnb li.vehicles .windows .lineup h4{
+    transition:all 0.2s 1.05s;
+}
+
+#gnb li.vehicles:hover .windows .lineup h4{
+    color:black;
+}
+
+#gnb li.vehicles .windows .lineup span{
+    transition:all 0.2s 1.05s;
+}
+
+#gnb li.vehicles:hover .windows .lineup span{
+    color:black;
+}
+
+/* 비주얼 영역
+===================================================== */
+
+#visual{ width:1280px;  height:720px; position:relative;}
+#visual div.vid1, #visual div.vid2{ 
+    position:absolute;
+}
+
+
+#visual .vid1{
+    top:200px;
+    left:40px;
+    width:440px;
+    height: 176px;
+    background-color: rgba(0,0,0,0.4);
+	z-index:10;
+}
+
+#visual .vid1 h2{
+    font-size:55px;
+    color:#fff;
+    display:inline;
+}
+
+#visual .vid1 a{
+    text-align: center;
+    line-height: 57px;
+    vertical-align: top;
+    color:#fff;
+    padding:10px 20px 10px;
+    background-color: #aaa;
+}
+
+#visual .vid1 span{
+    font-size:25px;
+    color:#fff;
+}
+
+/* 컨텐츠 영역
+===================================================== */
+
+#content{
+	position:relative;
+    top:-120px;
+    height:300px;
+    background-color:#555;
+	padding:40px 0;
+}
+
+#content #articleArea{
+	width:1100px;
+	margin:0 auto;
+}
+
+#content article{
+    width:240px;
+    height: 280px;
+    float:left;
+	margin-left:25px;
+}
+
+#content #articleArea article p{
+    padding-top:7px;
+}
+
+#articleArea:after{content:""; display:block; clear:both;}
+
+
+#content h4{
+    padding:20px 0;
+    color:#fff;
+}
+
+#content span{
+    color:#ccc;
+}
+
+#contant p{
+    padding-top:10px;
+}
+
+#content p a{
+    color:#ccc;
+    font-size:12px;
+}
+
+#content article img{
+    width:100%;
+    
+}
+
+#content_sub{
+    background-color: #ddd;
+	padding:40px 0;
+    position:relative;
+    top:-120px;
+}
+
+#subArea1{ width:1100px;  margin:0 auto;}
+
+#content_sub article{
+    width:500px;
+    color:#444;
+    float:left;
+	margin-left:30px;
+}
+
+/*#content_sub article:first-child{ margin-left:0;}*/
+
+#subArea1:after{ content:""; display:block; clear:both;}
+
+#content_sub h4{
+    line-height: 70px;
+}
+
+#content_sub img{
+    width:100%;
+}
+
+#subArea2{
+    width:100%;
+    position:relative;
+}
+
+#subArea2 section{
+    position:absolute;
+    top:0;
+    left:0;
+    color:#fff;
+}
+
+#content_sub h3{
+    width:1280px;
+    padding:20px 0 60px;
+    line-height:25px;
+    text-align:center;
+    font-size:40px;
+    letter-spacing:2px;
+}
+
+#content_sub #subArea2 h3{
+    width:1280px;
+    padding-top:100px;
+    line-height:25px;
+    text-align:center;
+    font-size:40px;
+    letter-spacing:2px;
+}
+
+#content_sub #subArea2 h3:before{
+    margin:0 auto;
+    width:440px;
+    height: 2px;
+    position:relative;
+    bottom:18px;
+    content:"";
+    display:block;
+    background-color: #fff;
+}
+
+#content_sub #subArea2 h3:after{
+    margin:0 auto;
+    width:440px;
+    background-color: #fff;
+    height: 2px;
+    content:"";
+    display:block;
+    position:relative;
+    top:15px;
+}
+
+#content_sub #subArea2 section p{
+    width:600px;
+    margin:0 auto;    
+    font-size:24px;
+}

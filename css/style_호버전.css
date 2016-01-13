@@ -1,0 +1,230 @@
+/* 전체 영역
+===================================================== */
+
+#wrapper{
+    width:1280px;
+    margin:0 auto;
+}
+
+/* 헤더 영역
+===================================================== */
+
+header{
+    width:100%;
+    height:70px;
+}
+
+header h1{
+    width:145px;
+    height: 60px;
+    position:absolute;
+    top:10px;
+    left:27px;
+    padding-top:2px;
+    border-right: 1px solid #aaa;
+}
+
+header h1 img{
+    width:115px;
+    height:50px;
+    float:left;
+}
+
+#gnb{
+    width:100%;
+}
+
+#gnb li{
+    width:271px;
+    margin-top:10px;
+    float:left;
+    border-right:1px solid #aaa;
+    transition:all .5s;
+}
+
+#gnb li:hover{
+    background-color: #dedede;
+}
+
+#gnb li.vehicles{
+    margin-left:172px;
+}
+
+#gnb li a{
+    line-height: 61px;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:3px;
+    padding:25px 80px;
+}
+
+#gnb li.above_and_beyond a{
+    padding:25px 55px;
+}
+
+#gnb li.vehicles div.windows{
+    width:1280px;
+    height: 600px;
+    position:absolute;
+    top:70px;
+    left:0;
+    display:none;
+    z-index: 11;
+    float:left;
+}
+
+#gnb li.vehicles div.windows section{
+    width:319px;
+    height: 280px;
+    float:left;
+    text-align:center;
+    background-color: #fff;
+    border-right:1px solid #efefef;
+    padding-top:10px;
+}
+
+#gnb li.vehicles div.windows img{
+    width:100%;
+    position:relative;
+    right:80px;
+}
+
+#gnb li.vehicles:hover div.windows{
+    display:block;
+}
+
+#gnb h4{
+    text-decoration:underline;
+    position:relative;
+    bottom:10px;
+}
+
+/* 비주얼 영역
+===================================================== */
+
+#visual{ width:1280px;  height:720px; position:relative;}
+#visual div.vid1, #visual div.vid2{ position:absolute;}
+
+
+#visual .vid1{
+    top:250px;
+    left:20px;
+    width:440px;
+    height: 176px;
+    background-color: rgba(0,0,0,0.4);
+	z-index:10;
+}
+
+#visual .vid1 h2{
+    font-size:55px;
+    color:#fff;
+    display:inline;
+}
+
+#visual .vid1 a{
+    text-align: center;
+    line-height: 57px;
+    vertical-align: top;
+    color:#fff;
+    padding:10px 20px 10px;
+    background-color: #aaa;
+}
+
+#visual .vid1 span{
+    font-size:25px;
+    color:#fff;
+}
+
+/* 컨텐츠 영역
+===================================================== */
+
+#content{
+	
+    height:300px;
+    background-color:#555;
+	padding:40px 0;
+}
+
+#content #articleArea{
+	width:1100px;
+	margin:0 auto;
+}
+
+#content article{
+    width:240px;
+    height: 280px;
+    float:left;
+	margin-left:25px;
+}
+
+#articleArea:after{content:""; display:block; clear:both;}
+
+
+#content h4{
+    padding:20px 0;
+    color:#fff;
+}
+
+#content span{
+    color:#ccc;
+}
+
+#contant p{
+    padding-top:10px;
+}
+
+#content p a{
+    color:#ccc;
+    font-size:12px;
+}
+
+#content article img{
+    width:100%;
+    
+}
+
+#content_sub{
+    background-color: #ddd;
+	padding:40px 0;
+}
+
+#subArea1{ width:1100px;  margin:0 auto;}
+
+#content_sub h3{
+    padding-bottom:50px;
+    text-align:center;
+    font-size:40px;
+    letter-spacing: 2px;
+    text-decoration:underline;
+}
+
+#content_sub article{
+    width:500px;
+    color:#444;
+    float:left;
+	margin-left:30px;
+}
+
+/*#content_sub article:first-child{ margin-left:0;}*/
+
+#subArea1:after{ content:""; display:block; clear:both;}
+
+#content_sub h4{
+    line-height: 70px;
+}
+
+#content_sub img{
+    width:100%;
+}
+
+#subArea2{
+    width:100%;
+    position:relative;
+}
+
+#subArea2 section{
+    position:absolute;
+    top:0;
+    left:0;
+    color:#fff;
+}

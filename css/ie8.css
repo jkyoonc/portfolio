@@ -1,0 +1,6 @@
+@font-face{
+    font-family:sp;
+    src:url("fonts/SpoqaHanSans-Regular.eot");
+    src:local(※), url(SpoqaHanSans-Regular.woff) format(‘woff’)
+}
+body{font-family:"sp"}

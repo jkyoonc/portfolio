@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<title>랜드로버 코리아</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->
+		<!--[if IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css"/><![endif]-->
+		<!--[if IE 9 ]><link rel="stylesheet" type="text/css" href="css/ie9.css"/><![endif]-->
+		<!--[if lt IE 9]>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<![endif]-->
+		<!--[if gt IE 10]><link rel="stylesheet" type="text/css" href="css/ie10.css"/><![endif]-->
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			img{
+				border:none;
+				vertical-align:top;
+			}
+			
+			a:link,
+			a:visited{
+				text-decoration: none;
+				color: #333;
+			}
+			
+			a:hover,
+			a:focus{
+				text-decoration: none;
+				color: #333;
+			}
+			
+			li{
+				list-style-type: none;
+			}
+			
+			@font-face{
+				font-family: "sp";
+				src: url("fonts/SpoqaHanSans-Regular.woff");
+			}
+			
+			html, body{
+				margin:0;
+				padding:0;
+				font-family: "sp";
+                overflow-x: hidden;
+			}
+			header,nav,section,footer,aside,article{display:block;}
+		</style>
+		<script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/script.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+            <div id="header">
+                <div id="logo">
+                    <h1><a href="http://jkyoonc.dothome.co.kr/landrover/index.html"><img src="img/logo-large-2x.png" alt="LogoImage"/></a></h1>
+                </div>
+                <div id="gnb">
+                    <ul>
+                        <li><a id="login" href="#" title="로그인">&gt;로그인</a></li>
+                        <li><a href="join.html" title="회원가입">&gt;회원가입</a></li>
+                        <li><a href="#" title="나만의 랜드로버 만들기">&gt;나만의 랜드로버 만들기</a></li>
+                        <li><a href="#" title="전시장 찾기">&gt;전시장 찾기</a></li>
+                        <li><a href="#" title="문의하기">&gt;문의하기</a></li>
+                        <li class="buyers"><a href="#" title="Buyers toolkit">BUYERS TOOLKIT ▼</a>
+                            <ul class="toolkit">
+                                <li><a href="#" title="시승 신청">시승 신청</a></li>
+                                <li><a href="#" title="특수 개조 차량">특수 개조 차량</a></li>
+                                <li><a href="#" title="액세서리 찾아보기">액세서리 찾아보기</a></li>
+                                <li><a href="#" title="랜드로버 모델 살펴보기">랜드로버모델 살펴보기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="nav"><!--
+--><ul><!--
+--><li class="vehicles"><a href="#" title="VEHICLES&nbsp;">VEHICLES&nbsp;▼</a></li>
+                    <li class="ownership"><a href="#" title="OWNERSHIP">OWNERSHIP</a></li>
+                    <li class="experiences"><a href="#" title="EXPERIENCES">EXPERIENCES</a></li>
+                    <li class="above"><a href="#" title="ABOVE&nbsp;AND&nbsp;BEYOND">ABOVE&nbsp;AND&nbsp;BEYOND</a></li>
+                    <li class="searchIcon"><a href="#" title="search" class="searchArea"><img src="img/search_icon.png" alt="search"/></a></li>
+                    <li id="searchbox">
+                        <p><img src="img/search_icon.png" alt="searchIcon"/></p>
+                        <form action="http://www.landroverkorea.co.kr/search.html" method="get">
+                            <input id="searcha" type="text" placeholder="S E A R C H" autocomplete="off" name="query" title="searcharea"/><!--
+--></form>
+                    </li><!--onfocus="this, value=''; return true" value=''-->
+                    </ul>
+                </div>
+                <div class="windows">
+                    <div class="range_rover">
+                        <a href="#"><img src="img/range_rover.jpg" alt="레인지로버 이미지" /></a>
+                        <h4>RANGE ROVER</h4>
+                        <p><span>최상위 랜드로버의 위엄,<br/> 궁극의 럭셔리 SUV</span></p>
+                        <div></div>
+                    </div>
+                    <div class="range_rover_sport">
+                        <a href="#"><img src="img/range_rover_sport.jpg" alt="레인지로버 스포츠 이미지" /></a>
+                        <h4>RANGE ROVER SPORT</h4>
+                        <p><span>가장 다이내믹한 퍼포먼스를 발휘하는<br/> 스포츠 SUV</span></p>
+                    </div>
+                    <div class="range_rover_evoque">
+                        <a href="#"><img src="img/range_rover_evoque.jpg" alt="레인지로버 이보크 이미지" /></a>
+                        <h4>RANGE ROVER EVOQUE</h4>
+                        <p><span>혁신적인 디자인과 강력한<br/> 퍼포먼스를 겸비한 SUV</span></p>
+                    </div>
+                    <div class="new_discovery_sport">
+                        <a href="#"><img src="img/new_discover_sport.jpg" alt="뉴 디스커버리 스포츠 이미지" /></a>
+                        <h4>NEW DISCOVERY SPORT</h4>
+                        <p><span>DISCOVERY 패밀리의 새로운<br/> 프리미엄 컴팩트 SUV</span></p>
+                    </div>
+                    <div class="discovery">
+                        <a href="#"><img src="img/discovery.jpg" alt="디스커버리 이미지" /></a>
+                        <h4>DISCOVERY</h4>
+                        <p><span>유연하고 뛰어난 퍼포먼스를 지닌<br/> 진정한 오프로드 SUV</span></p>
+                    </div>
+                    <div class="freelander2">
+                        <a href="#"><img src="img/freelander2.jpg" alt="프리랜더2 이미지" /></a>
+                        <h4>FREELANDER 2</h4>
+                        <p><span>프리랜더, 영원히 기억될<br/> 프리미엄 컴팩트 SUV</span></p>
+                    </div>
+                    <div class="special">
+                        <a href="#"><img src="img/special.jpg" alt="스페셜 차량 작업 이미지" /></a>
+                        <h4>SPECIAL VEHICLE OPERATIONS</h4>
+                        <p><span>새로운 차원의 럭셔리함, 퍼포먼스<br/> 그리고 디자인</span></p>
+                    </div>
+                    <div class="lineup">
+                        <a href="#"><img src="img/lineup.jpg" alt="라인업 이미지" /></a>
+                        <h4>랜드로버 라인업 자세히 보기</h4>
+                        <p><span>랜드로버의 전 모델 라인업을 비교하고,<br/> 나에게 꼭 맞는 랜드로버를 탐색해보십시오.</span></p>
+                    </div>
+                </div>            
+            </div>
+            <div id="contents">
+                <div id="loginbox">
+                    <h3>LOGIN</h3>
+                    <p>로그인을 위하여 이메일과 패스워드를 입력해주세요.</p>
+                    <a href="#" title="search" class="searchArea"><img src="img/close.png" alt="search"/></a>
+                    <form action="#" method="post">
+                        <input type="text" placeholder="이메일 아이디" id="userid" title="userid"/>
+                        <input type="password" placeholder="비밀번호" id="userpw" title="userpw"/>
+                        <p>
+                            <input type="submit" value="확인" title="submit"/>
+                        </p>
+                        <span>아직 회원이 아니세요?<a href="#" title="회원가입">&nbsp;&nbsp;회원가입</a></span>
+                    </form>
+                </div>
+                <div id="visual">
+                    <div id="movie">
+                        <ul id="video">
+                            <li id="video1">
+                                <video controls autoplay class="videos" id=vid1 onplay="vidon1();" onended="vidend1();">
+                                    <source src="media/visual_0.mp4" type="video/mp4"/>
+                                </video>
+                            </li>
+                            <li id="video2">
+                                <video controls class="videos" id=vid2 onplay="vidon2();" onended="vidend2();">
+                                    <source src="media/visual_1.mp4" type="video/mp4"/>
+                                </video>
+                            </li>
+                            <li id="video3">
+                                <video controls class="videos" id=vid3 onplay="vidon3();" onended="vidend3();">
+                                    <source src="media/visual_2.mp4" type="video/mp4"/>
+                                </video>
+                            </li>
+                            <li id="video4">
+                                <video controls class="videos" id=vid4 onplay="vidon4();" onended="vidend4();">
+                                    <source src="media/visual_3.mp4" type="video/mp4"/>
+                                </video>
+                            </li>
+                            <li id="video5">
+                                <video controls class="videos" id=vid5 onplay="vidon5();" onended="vidend5();">
+                                    <source src="media/visual_4.mp4" type="video/mp4"/>
+                                </video>
+                            </li>
+                        </ul>
+                        <div id="controls"> 
+                            <a href="#" title="control_prev" class="ctrPrev" id="ctrPrev">&lt;</a>
+                            <a href="#" title="control_next" class="ctrNext" id="ctrNext">&gt;</a>
+                        </div>
+                        <div id="heading">
+                            <h2>액션, 본드 카 메이킹 필름</h2>
+                            <a href="#" title="자세히보기">자세히 보기</a>
+                            <span>스펙터의 비하인드 스토리와 독점 인터뷰</span>
+                        </div> 
+                    </div>
+
+                </div>
+            </div>
+            <div id="mheader">
+                <div id="mlogo">
+                    <h1><a href="/index.html"><img src="img/logo-large-2x.png" alt="LogoImage"/></a></h1>
+                </div>
+                <div id="mvehicles" class="vehicles">
+                    <a href="#" title="vehicles">VEHICLES&nbsp;▼</a>
+                    <div class="windows">
+                        <div class="range_rover">
+                            <a href="#"><img src="img/range_rover.jpg" alt="레인지로버 이미지" /></a>
+                            <h4>RANGE ROVER</h4>
+                            <p><span>최상위 랜드로버의 위엄,<br/> 궁극의 럭셔리 SUV</span></p>
+                            <div></div>
+                        </div>
+                        <div class="range_rover_sport">
+                            <a href="#"><img src="img/range_rover_sport.jpg" alt="레인지로버 스포츠 이미지" /></a>
+                            <h4>RANGE ROVER SPORT</h4>
+                            <p><span>가장 다이내믹한 퍼포먼스를 발휘하는<br/> 스포츠 SUV</span></p>
+                        </div>
+                        <div class="range_rover_evoque">
+                            <a href="#"><img src="img/range_rover_evoque.jpg" alt="레인지로버 이보크 이미지" /></a>
+                            <h4>RANGE ROVER EVOQUE</h4>
+                            <p><span>혁신적인 디자인과 강력한<br/> 퍼포먼스를 겸비한 SUV</span></p>
+                        </div>
+                        <div class="new_discovery_sport">
+                            <a href="#"><img src="img/new_discover_sport.jpg" alt="뉴 디스커버리 스포츠 이미지" /></a>
+                            <h4>NEW DISCOVERY SPORT</h4>
+                            <p><span>DISCOVERY 패밀리의 새로운<br/> 프리미엄 컴팩트 SUV</span></p>
+                        </div>
+                        <div class="discovery">
+                            <a href="#"><img src="img/discovery.jpg" alt="디스커버리 이미지" /></a>
+                            <h4>DISCOVERY</h4>
+                            <p><span>유연하고 뛰어난 퍼포먼스를 지닌<br/> 진정한 오프로드 SUV</span></p>
+                        </div>
+                        <div class="freelander2">
+                            <a href="#"><img src="img/freelander2.jpg" alt="프리랜더2 이미지" /></a>
+                            <h4>FREELANDER 2</h4>
+                            <p><span>프리랜더, 영원히 기억될<br/> 프리미엄 컴팩트 SUV</span></p>
+                        </div>
+                        <div class="special">
+                            <a href="#"><img src="img/special.jpg" alt="스페셜 차량 작업 이미지" /></a>
+                            <h4>SPECIAL VEHICLE OPERATIONS</h4>
+                            <p><span>새로운 차원의 럭셔리함, 퍼포먼스<br/> 그리고 디자인</span></p>
+                        </div>
+                        <div class="lineup">
+                            <a href="#"><img src="img/lineup.jpg" alt="라인업 이미지" /></a>
+                            <h4>랜드로버 라인업 자세히 보기</h4>
+                            <p><span>랜드로버의 전 모델 라인업을 비교하고,<br/> 나에게 꼭 맞는 랜드로버를 탐색해보십시오.</span></p>
+                        </div>
+                    </div> 
+                </div>
+                <div id="mnav">
+                    <a href="#" title="mobileNav"><img class="mNavIcon" src="img/nav_icon.png" alt="mobileNavIcon"/></a>
+                    <ul class="mgnb">
+                        <li class="msearchbox">
+                            <p><img src="img/search_icon.png" alt="searchIcon"/></p>
+                            <form action="http://www.landroverkorea.co.kr/search.html" method="get">
+                                <input id="searchb" type="text" placeholder="S E A R C H"  autocomplete="off" name="query" title="searcharea"></form></li>
+                        <li class="mvehicles">
+                            <p><a href="#" title="VEHICLES">VEHICLES ▼</a></p>
+                            <ul>
+                                <li><a href="#" title="RANGE ROVER">&gt; RANGE ROVER</a></li>
+                                <li><a href="#" title="RANGE ROVER SPORT">&gt; RANGE ROVER SPORT</a></li>
+                                <li><a href="#" title="RANGE ROVER EVOQUE">&gt; RANGE ROVER EVOQUE</a></li>
+                                <li><a href="#" title="DISCOVERY">&gt; DISCOVERY</a></li>
+                                <li><a href="#" title="NEW DISCOVERY SPORT">&gt; NEW DISCOVERY SPORT</a></li>
+                                <li><a href="#" title="FREELANDER 2">&gt; FREELANDER 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="ownership">
+                            <p><a href="#" title="OWNERSHIP">OWNERSHIP ▼</a></p>
+                            <ul>
+                                <li><a href="#" title="OWNERSHIP OVERVIEW">&gt; OWNERSHIP OVERVIEW</a></li>
+                                <li><a href="#" title="가이드 및 매뉴얼">&gt; 가이드 및 매뉴얼</a></li>
+                                <li><a href="#" title="CASTROL">&gt; CASTROL</a></li>
+                                <li><a href="#" title="CONTACT LAND ROVER">&gt; CONTACT LAND ROVER</a></li>
+                            </ul>
+                        </li>
+                        <li class="experiences">
+                            <p><a href="#" title="EXPERIENCES">EXPERIENCES ▼</a></p>
+                            <ul>
+                                <li><a href="#" title="EXPERIENCES OVERVIEW">&gt; EXPERIENCES OVERVIEW</a></li>
+                                <li><a href="#" title="NEWS">&gt; NEWS</a></li>
+                                <li><a href="#" title="ADVENTURE TRAVEL">&gt; ADVENTURE TRAVEL</a></li>
+                                <li><a href="#" title="SPONSORSHIP">&gt; SPONSORSHIP</a></li>
+                                <li><a href="#" title="EXPERIENCES OVERVIEW">&gt; EXPERIENCES OVERVIEW</a></li>
+                            </ul>
+                        </li>
+                        <li class="aboveAndBeyond">
+                            <p><a href="#" title="ABOVE AND BEYOND">ABOVE AND BEYOND ▼</a></p>
+                            <ul>
+                                <li><a href="#" title="25 YEARS OF DISCOVERY">&gt; 25 YEARS OF DISCOVERY</a></li>
+                                <li><a href="#" title="RESPONSIBILITY">&gt; RESPONSIBILITY</a></li>
+                                <li><a href="#" title="CELEBRATE DEFENDER">&gt; CELEBRATE DEFENDER</a></li>
+                                <li><a href="#" title="ADVENTURE GENE">&gt; ADVENTURE GENE</a></li>
+                                <li><a href="#" title="A LIFE EXTRAORDINARY">&gt; A LIFE EXTRAORDINARY</a></li>
+                            </ul>
+                        </li>
+                        <li class="findStore"><a href="#" title="전시장 찾기"><img src="img/icon_00.png" alt="store"/>&nbsp;전시장 찾기</a></li>
+                        <li class="makeLandrover"><a href="#" title="나만의 랜드로버 만들기"><img src="img/icon_11.png" alt="store"/>&nbsp;나만의 랜드로버 만들기</a></li>
+                        <li class="tryDrive"><a href="#" title="시승 신청"><img src="img/icon_13.png" alt="store"/>&nbsp;시승 신청</a></li>
+                        <li class="newsLetter"><a href="#" title="최신 뉴스 레터 신청"><img src="img/icon_14.png" alt="store"/>&nbsp;최신 뉴스 레터 신청</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="mcontents">
+                <div id="mvisual">
+                    <div id="slides">
+                        <ul id="photos">
+                            <li id="photo1">
+                                <img src="img/bgi00.jpg" alt="이미지1"/>
+                            </li>
+                        </ul>
+                        <div id="mheading">
+                            <h2>액션, 본드 카 메이킹 필름</h2>
+                            <a href="#" title="자세히보기">자세히 보기</a>
+                            <span>스펙터의 비하인드 스토리와 독점 인터뷰</span>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div id="full"></div>
+			<div id="section1">
+				<div id="articleArea">
+					<div class="article">
+						<img src="img/content_1.jpg" alt="Barbour For Land Rover 이미지">
+						<h4>BABOUR FOR LAND ROVER</h4>
+						<span>영국을 대표하는 브랜드 바버(BARBOUR)와 랜드로버가 2014년 가을 및 겨울 시즌 패션/액세서리 콜라보레이션을 선보입니다.</span>
+						<p><a href="#" title="자세히보기">&gt; 자세히 보기</a></p>
+					</div>
+					<div class="article">
+						<img src="img/content_2.jpg" alt="Barbour For Land Rover 이미지">
+                        <h4>OWNERSHIP</h4>
+                        <span>랜드로버만의 특별한 서비스와 보증 혜택에 대한 정보를 얻으실 수 있습니다. 또한, 랜드로버의 혁신적인 테크놀로지와 차량의 특징에 대한 가이드도 함께 제공합니다.</span>
+						<p><a href="#" title="자세히보기">&gt; 자세히 보기</a></p>
+					</div>
+					<div class="article">
+						<img src="img/content_3.jpg" alt="Barbour For Land Rover 이미지">
+                        <h4>INNOVATION</h4>
+                        <span>더욱 가벼워지고 강한 내구성을 구현하는 알루미늄 모노코크 차체로 랜드로버는 보다 더 완벽해졌습니다.</span>
+						<p><a href="#" title="자세히보기">&gt; 자세히 보기</a></p>
+					</div>
+					<div class="article">
+						<img src="img/content_4.jpg" alt="Barbour For Land Rover 이미지">
+                        <h4>LAND ROVER EXPERIENCE</h4>
+                        <span>험난한 오프로드 지형에서 받는 전문 주행 강습, 지상 최고의 모험 그리고 세계적인 스포츠 이벤트 스폰서십을 모두 아우르는 브랜드 랜드로버를 지금 바로 경험해보십시오.</span>
+						<p><a href="#" title="자세히보기">&gt; 자세히 보기</a></p>
+					</div>
+				</div>
+			</div>
+			<div id="contentSub">
+				<h3>ABOVE AND BEYOND</h3>
+				<div id="subArea1">
+					<div class="article">
+						<div class="embed-container"><iframe src="https://www.youtube.com/embed/BaPiM_mish4?rel=0&amp;showinfo=0" allowfullscreen title="youtube"></iframe></div>
+						<h4>PIKES PEAK DRIVING CHALLENGE</h4>
+						<span>RANGE ROVER SPORT는 미국 콜로라도 스프링스에 위치한 해발 14,100피트의 파이크스 피크(PIKES PEAK)에서 양산차 부문 세계 신기록을 세웠습니다.</span>
+					</div>
+					<div class="article">
+						<a href="#" title="history"><img src="img/content_sub_2.jpg" alt="sub2"/></a>
+						<h4><a href="#" title="history">45 YEARS OF BRITISH DESIGN</a></h4>
+						<span>45년간 고급 디자인 및 기술적 혁신으로 명성을 떨쳐온 레인지로버<br/><br/><a href="#" title="history">&gt; 자세히 보기</a></span>
+					</div>
+				</div>
+				<div id="subArea2">
+					<img src="img/sub_area2.jpg" alt="딜러이미지"/>
+					<div>
+						<h3>FIND YOUR NEAREST<br/><br/>DEALERSHIP</h3>
+                        <p><span>전문적인 상담과 지원 서비스를 위하여 가장 가까운 랜드로버 전시장을 방문해 주십시오.</span></p>
+					</div>
+				</div>
+			</div>
+			<div id="container">
+			    <div>
+			        <h4>BUILD YOUR OWN</h4>
+                    <p>나만의 랜드로버 만들기를 이용하여 나만의 특별한 랜드로버를 완성해 보십시오.</p>
+                    <ul>
+                        <li><a href="#" title="range_rover">> RANGE ROVER</a></li>
+                        <li><a href="#" title="range_rover_sport">> RANGE ROVER SPORT</a></li>
+                        <li><a href="#" title="range_rover_evoque">> RANGE ROVER EVOQUE</a></li>
+                        <li><a href="#" title="discovory">> DISCOVERY</a></li>
+                        <li><a href="#" title="discovory_sport">> DISCOVERY SPORT</a></li>
+                        <li><a href="#" title="freelander_2">> FREELANDER 2</a></li>
+                    </ul>
+			    </div>
+                <div class="download">
+                    <h4>BROCHURE DOWNLOAD</h4>
+                    <p>랜드로버 모델의 최신 브로슈어를 다운로드 하십시오.</p>
+                    <ul>
+                        <li><a href="#" title="range_rover">> RANGE ROVER</a></li>
+                        <li><a href="#" title="range_rover_sport">> RANGE ROVER SPORT</a></li>
+                        <li><a href="#" title="range_rover_evoque">> RANGE ROVER EVOQUE</a></li>
+                        <li><a href="#" title="discovory">> DISCOVERY</a></li>
+                        <li><a href="#" title="discovory_sport">> DISCOVERY SPORT</a></li>
+                        <li><a href="#" title="freelander_2">> FREELANDER 2</a></li>
+                    </ul>
+                </div>
+                <div class="testDrive">
+                    <h4>TEST DRIVE</h4>
+                    <p>가까운 랜드로버 전시장에서 시승 신청을 문의해 주십시오.</p>
+                    <ul>
+                        <li><a href="#" title="시승신청">> 시승 신청</a></li>
+                        <li><a href="#" title="오프로드시승신청">> 오프로드 익스피리언스 신청</a></li>
+                        <li><a href="#" title="트래블신청">> 어드벤쳐 트래블 신청</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="containerSub">
+                <div class="articleArea">    
+                    <div class="article1">
+                        <p><a href="#" title="makeLandrover"><img src="img/icon_01.png" alt="icon1"/></a></p>
+                        <h4><a href="#" title="makeLandrover">나만의 랜드로버 만들기</a></h4>
+                        <p><a href="#" title="makeLandrover"><span>나만의 랜드로버 만들기를 사용하여 라이프 스타일에 꼭 맞는 차량을 디자인하십시오.</span></a></p>
+                    </div>
+                    <div class="article2">
+                        <p><a href="#" title="experience"><img src="img/icon_02.png" alt="icon2"/></a></p>
+                        <h4><a href="#" title="experience">익스피리언스 데이 신청</a></h4>
+                        <p><a href="#" title="experience"><span>랜드로버 익스피리언스 신청으로 랜드로버의 우수함을 경험해보십시오.</span></a></p>
+                    </div>
+                    <div class="article3">
+                        <p><a href="#" title="try"><img src="img/icon_03.png" alt="icon3"/></a></p>
+                        <h4><a href="#" title="try">시승 신청</a></h4>
+                        <p><a href="#" title="try"><span>가까운 랜드로버 전시장에서 시승 신청을 문의해 주십시오.</span></a></p>
+                    </div>
+                    <div class="article4">
+                        <p><a href="#" title="newsletter"><img src="img/icon_04.png" alt="icon4"/></a></p>
+                        <h4><a href="#" title="newsletter">최신 뉴스레터 신청</a></h4>
+                        <p><a href="#" title="newsletter"><span>랜드로버의 최신 뉴스레터를 신청해 주십시오.</span></a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="footerWrapper">
+                   <div id="footerMain">
+                       <div class="download">
+                           <h4>DOWNLOAD</h4>
+                           <p><a href="#" title="브로슈어다운로드">랜드로버 차량 브로슈어 다운로드</a></p>
+                           <p><a href="#" title="앱다운로드">랜드로버 차량 앱 다운로드</a></p>
+                       </div>
+                       <div class="vehicles">
+                           <h4>LAND ROVER VEHICLES</h4>
+                           <p><a href="#" title="모델살펴보기">랜드로버 모델 살펴보기</a></p>
+                           <p><a href="#" title="중고차량">랜드로버 인증 중고차량</a></p>
+                           <p><a href="#" title="특수차량사업부">특수차량 사업부</a></p>
+                           <p><a href="#" title="특수개조차량">특수 개조 차량</a></p>
+                       </div>
+                       <div class="owners">
+                           <h4>OWNERS</h4>
+                           <p><a href="#" title="리콜정보">리콜 정보</a></p>
+                           <p><a href="#" title="보증정책">보증 정책</a></p>
+                           <p><a href="#" title="부품보증정책">부품 보증 정책</a></p>
+                           <p><a href="#" title="castrol_and_land_rover">CASTROL AND LAND ROVER</a></p>
+                           <p><a href="#" title="부품가격정보확인">부품 가격정보 확인</a></p>
+                       </div>
+                       <div class="experiences">
+                           <h4>EXPERIENCES</h4>
+                           <p><a href="#" title="랜드로버익스피리언스">랜드로버 익스피리언스</a></p>
+                           <p><a href="#" title="랜드로버익스피리언스센터">랜드로버 익스피리언스 센터</a></p>
+                           <p><a href="#" title="랜드로버스폰서십">랜드로버 스폰서 십</a></p>
+                           <p><a href="#" title="랜드로버어드벤쳐트레블">랜드로버 어드벤쳐 트레블</a></p>
+                       </div>
+					   <div class="aboutlandrover">
+                           <h4>ABOUT LAND ROVER</h4>
+                           <p><a href="#" title="ABOUT_LAND_ROVER">ABOUT JAGUAR LAND ROVER</a></p>
+                           <p><a href="#" title="최신뉴스">최신뉴스</a></p>
+                       </div>
+                       <div class="shop">
+                           <h4>SHOP LAND ROVER</h4>
+                           <p><a href="#" title="SHOP_LAND_ROVER">SHOP LAND ROVER</a></p>
+                       </div>
+                       <div class="social">
+                          <h4>JOIN THE CONVERSATION</h4>
+                           <p><a href="http://www.facebook.com/landrover.kr" title="facebook"><img src="img/icon_05.png" alt="facebook"/><strong>페이스북</strong></a></p>
+                           <p><a href="http://www.twitter.com/landrover"><img src="img/icon_06.png" alt="twitter"/><strong>트위터</strong></a></p>
+                           <p><a href="http://www.youtube.com/landroverkorea"><img src="img/icon_07.png" alt="youtube"/><strong>유튜브</strong></a></p>
+                       </div>
+                   </div>
+                   <div id="footerSub">
+                       <ul>
+						   <li><p><a href="#" title="world"><img src="img/KR.png" alt="한국"/><span>&nbsp;&nbsp;한국&nbsp;<strong>&and;</strong></span></a></p></li>
+                           <li><p><a href="#" title="채용"><span>채용</span></a></p></li>
+                           <li><p><a href="#" title="CONTACT LAND ROVER"><span>CONTACT LAND ROVER</span></a></p></li>
+                           <li><p><a href="#" title="개인정보처리방침"><span>쿠키 및 개인정보처리방침</span></a></p></li>
+                       </ul>
+                   </div>
+                    <div id="subFooter">
+						<p><span>Jaguar Land Rover Limited: Registered office: Abbey Road, Whitley, Coventry CV3 4LF. Registered in England No: 1672070<br/><br/>
+						상기 연비는 제조사가 국내 법률에 따라 공식적인 인증을 통해 얻은 결과입니다. 단, 차량의 실제 연료 소비량은 운전자 및 주행 환경에 따라 차이가 있을 수 있으니 해당 수치는 비교 목적으로 참조하시기 바랍니다. 
+							상기 정보, 제원, 이미지들은 실제 국내 적용 사양과 상이할 수 있으며 성능 개선을 위하여 사전 예고 없이 변경될 수 있습니다. 정확한 모델별 옵션 적용 사항은 가까운 재규어 랜드로버 공식 딜러 전시장에 문의하시기 바랍니다.</span></p>
+                    </div>
+                </div>
+		</div>
+	</body>
+</html>
